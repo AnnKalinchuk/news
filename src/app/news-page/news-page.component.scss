@@ -1,0 +1,24 @@
+mat-card {
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.mat-card-image {
+  width: 100px;
+  height:100px;
+  margin:0 20px;
+
+}
+
+::ng-deep .mat-paginator-page-size {
+  display:none!important;
+}
+
+.news-info {
+  display: flex;
+}
+
+mat-form-field {
+  width: 100%;
+  margin: 20px 0;
+}

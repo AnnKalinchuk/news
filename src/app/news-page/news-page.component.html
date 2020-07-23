@@ -1,0 +1,16 @@
+<mat-form-field>
+  <input matInput [formControl]="searchNewsControl" placeholder="Title"  name="search">
+</mat-form-field>
+<mat-card *ngFor="let news of newsData">
+  <mat-card-content>
+    <div class="news-info">
+       <a routerLink="/article"  [state]="{title:news.title, content: news.content, imgUrl:news.urlToImage}">
+        <img mat-card-image src="{{news.urlToImage}}" alt="image news" >
+      </a>
+      <p>{{news.title}}</p>
+    </div>
+
+  </mat-card-content>
+</mat-card>
+<mat-paginator  [length]="length" [pageSize]="pageSize" showFirstLastButtons></mat-paginator>
+
